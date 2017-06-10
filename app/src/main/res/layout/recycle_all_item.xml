@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/gradient_background"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/r1"
+        >
+
+
+        <com.google.android.gms.ads.NativeExpressAdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adUnitId="ca-app-pub-5006866391263263/9731210836"
+            ads:adSize="360x100">
+        </com.google.android.gms.ads.NativeExpressAdView>
+
+
+
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/r1"
+    >
+
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bg"
+        android:id="@+id/all_artwork"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="song Name"
+        android:layout_toRightOf="@+id/all_artwork"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="17dp"
+        android:id="@+id/all_song_title"
+        android:layout_toLeftOf="@+id/like"
+        android:maxLines="2"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:text="song Name"
+        android:layout_toRightOf="@+id/all_artwork"
+        android:layout_below="@+id/all_song_title"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/all_song_artist"
+        android:layout_toLeftOf="@+id/like"
+        android:maxLines="2"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:text=""
+        android:layout_toRightOf="@+id/all_artwork"
+        android:layout_below="@+id/all_song_artist"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/all_likes_count"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:text=""
+        android:layout_toRightOf="@+id/all_likes_count"
+        android:layout_below="@+id/all_song_artist"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/all_play_count"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_border_30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/like"
+        />
+
+</RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

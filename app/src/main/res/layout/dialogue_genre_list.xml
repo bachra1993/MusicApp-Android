@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+   >
+
+
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radiogroup"
+            android:checkedButton="@+id/radiogroup">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="search"
+                android:id="@+id/btn_search"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+
+                />
+    </RelativeLayout>
+            <RadioButton
+                android:id="@+id/alternativerock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="alternativerock" />
+
+            <RadioButton
+                android:id="@+id/ambient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ambient" />
+            <RadioButton
+                android:id="@+id/classical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="classical" />
+
+            <RadioButton
+                android:id="@+id/country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="country" />
+
+            <RadioButton
+                android:id="@+id/danceedm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="danceedm" />
+
+            <RadioButton
+                android:id="@+id/dancehall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dancehall" />
+
+            <RadioButton
+                android:id="@+id/deephouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="deephouse" />
+
+            <RadioButton
+                android:id="@+id/disco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="disco" />
+
+            <RadioButton
+                android:id="@+id/drumbass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="drumbass" />
+
+            <RadioButton
+                android:id="@+id/dubstep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dubstep" />
+
+            <RadioButton
+                android:id="@+id/electronic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="electronic" />
+
+            <RadioButton
+                android:id="@+id/folksingersongwriter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="folksingersongwriter" />
+
+            <RadioButton
+                android:id="@+id/hiphoprap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hiphoprap" />
+
+            <RadioButton
+                android:id="@+id/house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="house" />
+
+            <RadioButton
+                android:id="@+id/indie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="indie" />
+
+            <RadioButton
+                android:id="@+id/jazzblues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="jazzblues" />
+
+            <RadioButton
+                android:id="@+id/latin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="latin" />
+
+            <RadioButton
+                android:id="@+id/metal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="metal" />
+
+            <RadioButton
+                android:id="@+id/piano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="piano" />
+
+            <RadioButton
+                android:id="@+id/pop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pop" />
+
+
+
+
+
+            <RadioButton
+                android:id="@+id/reggae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reggae" />
+
+            <RadioButton
+                android:id="@+id/reggaeton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reggaeton" />
+
+            <RadioButton
+                android:id="@+id/rock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rock" />
+
+            <RadioButton
+                android:id="@+id/soundtrack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="soundtrack" />
+
+            <RadioButton
+                android:id="@+id/techno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="techno" />
+
+            <RadioButton
+                android:id="@+id/trance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="trance" />
+
+            <RadioButton
+                android:id="@+id/trap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="trap" />
+
+            <RadioButton
+                android:id="@+id/triphop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="triphop" />
+
+            <RadioButton
+                android:id="@+id/world"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="world" />
+
+
+
+
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+</ScrollView>
+
+</RelativeLayout>

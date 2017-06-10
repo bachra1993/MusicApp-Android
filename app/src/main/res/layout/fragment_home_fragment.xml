@@ -1,0 +1,321 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.bechirkaddech.musicapp.Fragments.Home_fragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/home_scroll"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+
+
+        <com.google.android.gms.ads.NativeExpressAdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adUnitId="ca-app-pub-5006866391263263/9731210836"
+            ads:adSize="360x100">
+        </com.google.android.gms.ads.NativeExpressAdView>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending Songs"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/Trending"
+                android:layout_marginBottom="5dp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_toLeftOf="@+id/more_one"
+                android:layout_centerVertical="true"
+                android:id="@+id/see_one"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_keyboard_arrow_right_24dp"
+                android:id="@+id/more_one"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentEnd="true"
+                />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/Trending"
+                android:id="@+id/recycle_trending">
+
+            </android.support.v7.widget.RecyclerView>
+
+            
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Chart"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/TopChart"
+                android:layout_marginBottom="5dp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:layout_toLeftOf="@+id/more_two"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/see_two"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_right_24dp"
+                    android:id="@+id/more_two"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/TopChart"
+                android:id="@+id/recycle_top">
+                </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending Audio"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/audio_trending"
+                android:layout_marginBottom="5dp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See All"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:layout_toLeftOf="@+id/more_three"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/see_three"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_right_24dp"
+                    android:id="@+id/more_three"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/audio_trending"
+                android:id="@+id/recycle_trending_audio">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Audio"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/audio_top"
+                android:layout_marginBottom="5dp" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_toLeftOf="@+id/more_four"
+                android:layout_centerVertical="true"
+                android:id="@+id/see_four"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_keyboard_arrow_right_24dp"
+                android:id="@+id/more_four"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/audio_top"
+                android:id="@+id/recycle_top_audio">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_camera_24dp"
+        android:id="@+id/laoding_home"
+        android:visibility="gone"
+        />
+
+
+
+
+
+</RelativeLayout>
+
+
+
+</FrameLayout>

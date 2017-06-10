@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    >
+
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep Timer"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:id="@+id/timer"
+        />
+    <com.triggertrap.seekarc.SeekArc
+
+
+        android:id="@+id/seekArc"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        seekarc:rotation="180"
+
+        seekarc:touchInside="true"
+        android:layout_centerInParent="true"
+        seekarc:max="3600000"
+        seekarc:arcWidth="8dp"
+        seekarc:arcColor="@color/grey"
+        seekarc:progressWidth="10dp"
+        seekarc:progressColor="@color/colorPrimary"
+
+        />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/seekArc"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp"
+
+    >
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="5dp"
+        android:textAllCaps="false"
+        android:id="@+id/btn_done"
+        android:visibility="gone"
+
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/text"
+    android:text="The music will stop after the selected time."
+    />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/text"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Off"
+            android:layout_marginLeft="3dp"
+            android:layout_height="wrap_content" />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_sleeper"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="On"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

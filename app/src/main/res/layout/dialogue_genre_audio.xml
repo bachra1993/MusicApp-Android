@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radiogroup"
+            android:checkedButton="@+id/radiogroup">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="search"
+                    android:id="@+id/btn_search"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+
+                    />
+            </RelativeLayout>
+
+
+            <RadioButton
+                android:id="@+id/audiobooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="audiobooks" />
+
+            <RadioButton
+                android:id="@+id/business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="business" />
+
+            <RadioButton
+                android:id="@+id/comedy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="comedy" />
+
+            <RadioButton
+                android:id="@+id/entertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="entertainment" />
+
+            <RadioButton
+                android:id="@+id/learning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="learning" />
+
+            <RadioButton
+                android:id="@+id/newspolitics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="newspolitics" />
+
+
+            <RadioButton
+                android:id="@+id/religionspirituality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="religionspirituality" />
+
+
+            <RadioButton
+                android:id="@+id/science"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="science" />
+
+            <RadioButton
+                android:id="@+id/sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sports" />
+
+            <RadioButton
+                android:id="@+id/storytelling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="storytelling" />
+
+            <RadioButton
+                android:id="@+id/technology"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="technology" />
+
+
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
